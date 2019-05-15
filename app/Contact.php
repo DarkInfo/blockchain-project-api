@@ -13,4 +13,8 @@ class Contact extends Model
     //Массовое заполнение
     protected $fillable = ['key', 'url'];
 
+    public function user(){
+        return $this->belongsTo('App\User');
+    }
+
 }

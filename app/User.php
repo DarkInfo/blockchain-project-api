@@ -14,5 +14,9 @@ class User extends Authenticatable
     protected $fillable = ['email', 'password', 'address'];
     //Скрываемые поля при сериализации
     protected $hidden = ['email','password', 'api_token'];
+    
+    public function contacts(){
+        return $this->hasMany('App\Contact');
+    }
 
 }
