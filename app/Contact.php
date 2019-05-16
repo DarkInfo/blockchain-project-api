@@ -11,7 +11,7 @@ class Contact extends Model
     //Временные метки
     public $timestamps = false;
     //Массовое заполнение
-    protected $fillable = ['key', 'url'];
+    protected $fillable = ['url'];
 
     public function user(){
         return $this->belongsTo('App\User');
