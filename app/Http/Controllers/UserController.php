@@ -15,7 +15,7 @@ use Str;
 class UserController extends Controller
 {
 
-    public function get(GetRequest $request){
+    public function get(Request $request){
         //Проверка входных данных
         $validator = Validator::make([
             'id' => $this->route('id'),
